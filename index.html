@@ -1,0 +1,280 @@
+c:\Users\REB\Desktop\my website\KIRA CLINIC\images\0.png<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CPEC SAINT BABETH – Excellence in Education, Byumba</title>
+<!-- Linking codes of CSS -->
+ <link rel="stylesheet" href="style1.css">
+  
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <div class="logo-emblem"><img src="log1.png" alt="School's logo"></div>
+    <div class="logo-text">
+      <span>CPEC SAINT BABETH</span>
+      <span>Byumba, Rwanda</span>
+    </div>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#departments">Departments</a></li>
+    <li><a href="#workshops">Workshops</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="#contact" class="nav-cta">Apply Now</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Est. 2024— Byumba, Rwanda</div>
+    <h1>Shaping<br>Tomorrow's<br><em>Leaders</em></h1>
+    <p class="hero-subtitle">Quality General & Technical Education for a Brighter Future</p>
+    <div class="hero-location">Byumba, Northern Province, Rwanda</div>
+    <div class="hero-buttons">
+      <button class="btn-primary" onclick="openModal()">Apply Now →</button>
+      <button class="btn-secondary" onclick="document.getElementById('departments').scrollIntoView({behavior:'smooth'})">Explore Programs</button>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="num">3</div>
+      <div class="label">O-Level Years</div>
+    </div>
+    <div class="stat-item">
+      <div class="num">2</div>
+      <div class="label">Tech Workshops</div>
+    </div>
+    <div class="stat-item">
+      <div class="num">100%</div>
+      <div class="label">Commitment</div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPARTMENTS -->
+<section id="departments">
+  <div class="reveal">
+    <div class="section-tag">Academic Programs</div>
+    <h2 class="section-title">Our Departments</h2>
+    <p class="section-desc">We offer a strong Ordinary Level curriculum across three years, building a solid academic foundation for every student.</p>
+  </div>
+  <div class="dept-grid">
+    <div class="dept-card reveal" onclick="showDeptInfo('General Studies')">
+      <div class="dept-card-img" style="background-image:url('senior.JPG')">
+        <span class="dept-card-level">Ordinary Level</span>
+      </div>
+      <div class="dept-card-body">
+        <h3>General Studies</h3>
+        <p>A comprehensive curriculum covering Mathematics, Sciences, Languages, and Humanities to build well-rounded students ready for higher education.</p>
+        <div class="classes">
+          <span class="class-pill">Senior 1</span>
+          <span class="class-pill">Senior 2</span>
+          <span class="class-pill">Senior 3</span>
+        </div>
+      </div>
+    </div>
+    <div class="dept-card reveal" onclick="showDeptInfo('Software Development')">
+      <div class="dept-card-img" style="background-image:url(sod.JPG)">
+        <span class="dept-card-level">Advanced Level (Software Development)</span>
+      </div>
+      <div class="dept-card-body">
+        <h3>Software Development</h3>
+        <p>Dedicated focus on JavaScript, Website Development, Version Control, and VUE.JS Framework with hands-on lab experiments and problem-solving activities.</p>
+        <div class="classes">
+          <span class="class-pill">Version Control</span>
+          <span class="class-pill">Web Development</span>
+          <span class="class-pill">JavaScript Fundamental</span>
+        </div>
+      </div>
+    </div>
+    <div class="dept-card reveal" onclick="showDeptInfo('Multimedia Production')">
+      <div class="dept-card-img" style="background-image:url('multi5.JPG')">
+        <span class="dept-card-level">Advanced Level (Multimedia Production)</span>
+      </div>
+      <div class="dept-card-body">
+        <h3>Multimedia Production</h3>
+        <p>This deals with Video Editing, Sound Editing, Setting and Operating Cameras, Animation and even Artistic Drawing. It enables students to be capable of producing anything related to Multimedia. </p>
+        <div class="classes">
+          <span class="class-pill">Video Edit</span>
+          <span class="class-pill">Sound Edit</span>
+          <span class="class-pill">Operate Camera</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKSHOPS -->
+<section id="workshops">
+  <div class="reveal">
+    <div class="section-tag" style="color: var(--gold-light);">Technical Training</div>
+    <h2 class="section-title">Our Workshops</h2>
+    <p class="section-desc">Gain hands-on, industry-relevant technical skills that prepare you for the digital economy.</p>
+  </div>
+  <div class="workshop-grid">
+    <div class="workshop-card reveal">
+      <span class="ws-icon">💻</span>
+      <h3>Software Development</h3>
+      <p>Learn to design, build, and deploy modern software applications. Students gain practical programming skills from beginner to advanced level, working on real projects.</p>
+      <div class="ws-skills">
+        <span class="ws-skill-tag">HTML & CSS</span>
+        <span class="ws-skill-tag">JavaScript</span>
+        <span class="ws-skill-tag">Python</span>
+        <span class="ws-skill-tag">Databases</span>
+        <span class="ws-skill-tag">Web Apps</span>
+      </div>
+    </div>
+    <div class="workshop-card reveal">
+      <span class="ws-icon">🎬</span>
+      <h3>Multimedia Workshop</h3>
+      <p>Explore the world of digital media — from graphic design and video production to audio editing and digital marketing. Unlock your creativity with professional tools.</p>
+      <div class="ws-skills">
+        <span class="ws-skill-tag">Graphic Design</span>
+        <span class="ws-skill-tag">Video Editing</span>
+        <span class="ws-skill-tag">Photography</span>
+        <span class="ws-skill-tag">Audio Production</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-img-wrap reveal">
+    <img src="cpec1.png" alt="School students" class="about-img">
+    <div class="about-img-deco"></div>
+    <div class="about-badge">🏫 Private Institution<br>Byumba, Rwanda</div>
+  </div>
+  <div class="about-text reveal">
+    <div class="section-tag">About Us</div>
+    <h2 class="section-title">Who We Are</h2>
+    <p class="section-desc">CPEC SAINT BABETH is a private educational institution in Byumba committed to providing quality general and technical education. We believe every student deserves access to modern learning that opens doors to opportunity.</p>
+    <p class="section-desc" style="margin-top: 16px;">Our dedicated teachers, modern facilities, and practical workshops create an environment where students thrive — academically and technically.</p>
+    <ul class="value-list" style="margin-top: 28px;">
+      <li>Qualified and passionate teaching staff</li>
+      <li>Modern classrooms and computer labs</li>
+      <li>Strong emphasis on practical, hands-on learning</li>
+      <li>Safe, inclusive, and supportive environment</li>
+      <li>Affordable quality education for the Byumba community</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal" style="text-align:center; margin-bottom: 8px;">
+    <div class="section-tag" style="text-align:center;">Get in Touch</div>
+    <h2 class="section-title" style="text-align:center;">Contact Us</h2>
+    <p class="section-desc" style="margin: 0 auto; text-align:center;">Have questions about enrollment, programs, or fees? We're here to help.</p>
+  </div>
+  <div class="contact-layout">
+    <div class="contact-info reveal">
+      <h3>Reach Us Directly</h3>
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div>
+          <h4>Location</h4>
+          <p>Byumba, Northern Province<br>Rwanda</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div>
+          <h4>Phone</h4>
+          <p>+250 788 556 026</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">✉️</div>
+        <div>
+          <h4>Email</h4>
+          <p>cpecsaintbabeth@gmail.com</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">🕐</div>
+        <div>
+          <h4>Office Hours</h4>
+          <p>Mon – Fri: 7:30 AM – 5:00 PM<br>Sat: 8:00 AM – 12:00 PM</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form reveal">
+      <h3>Send Us a Message</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name *</label>
+          <input type="text" id="firstName" placeholder="Enter your first name">
+          <span class="form-error" id="firstNameErr">Please enter your first name.</span>
+        </div>
+        <div class="form-group">
+          <label>Last Name *</label>
+          <input type="text" id="lastName" placeholder="Enter your last name">
+          <span class="form-error" id="lastNameErr">Please enter your last name.</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email Address *</label>
+        <input type="email" id="email" placeholder="your@email.com">
+        <span class="form-error" id="emailErr">Please enter a valid email.</span>
+      </div>
+      <div class="form-group">
+        <label>Interested In</label>
+        <select id="program">
+          <option value="">-- Select a Program --</option>
+          <option>Ordinary Level (S1 – S3)</option>
+          <option>Software Development Workshop</option>
+          <option>Multimedia Workshop</option>
+          <option>General Inquiry</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Your Message *</label>
+        <textarea id="message" placeholder="Write your message here…"></textarea>
+        <span class="form-error" id="messageErr">Please enter a message.</span>
+      </div>
+      <button class="btn-primary" style="width:100%; justify-content:center;" onclick="submitForm()">Send Message →</button>
+      <div class="form-success" id="formSuccess">
+        ✅ Thank you! Your message has been received. We'll get back to you shortly.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">CPEC SAINT BABETH</div>
+  <p>Private Educational Institution · Byumba, Northern Province, Rwanda</p>
+  <p style="margin-top: 12px;">© 2025 CPEC SAINT BABETH. All rights reserved. · Designed with ❤️❤️ for quality education.</p>
+</footer>
+
+<!-- APPLY NOW MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-icon">🎓</div>
+    <h2>Ready to Join Us?</h2>
+    <p>Applications for the new academic year are now open. Visit us in Byumba or use the contact form below to start your journey with CPEC SAINT BABETH.</p>
+    <button class="btn-primary" style="width:100%; margin-bottom:12px" onclick="closeModal(); document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Fill in the Contact Form
+    </button>
+    <button class="btn-secondary" style="width:100%" onclick="closeModal()">Maybe Later</button>
+  </div>
+</div>
+
+<!-- SCROLL TOP BUTTON -->
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script src="javascript.js"></script>
+</body>
+</html>
